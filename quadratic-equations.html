@@ -1,0 +1,316 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Quadratic Equations | Smart Maths Notes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="quadratic.css">
+        <link rel="icon" type="image/jpeg" href="logo.jpg">
+    </head>
+    <body>
+
+ <nav class="navbar">
+
+    <!-- HAMBURGER -->
+    <div class="hamburger">☰</div>
+    
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- DESKTOP LINKS -->
+    <a href="index.html" class="desktop-only">Home</a>
+
+    <div class="dropdown">
+        <button class="dropbtn">Maths Topics ▾</button>
+        <div class="dropdown-content">
+            <a href="linear-equations.html">Linear Equations</a>
+            <a href="simultaneous-linear-equations.html">Simultaneous Equations</a>
+            <a href="quadratic-equations.html">Quadratic Equations</a>
+            <a href="exponents-and-logarithms.html">Exponents and Logarithms</a>
+            <a href="advanced-logarithms.html">Advanced Logarithms</a>
+        </div>
+    </div>
+
+    <a href="privacy.html" class="desktop-only">Privacy</a>
+    <a href="contact.html" class="desktop-only">Contact Us</a>
+
+    <div class="search-group">
+        <div class="search-wrapper">
+            <input type="text" id="topicSearch"
+                oninput="showSuggestions()"
+                onkeydown="if(event.key==='Enter') executeSearch()"
+                placeholder="Search maths topics...">
+            <div id="suggestionsBox" class="suggestions-dropdown"></div>
+        </div>
+
+        <!-- HIDE ON MOBILE -->
+        <button class="modern-search-btn desktop-only" onclick="executeSearch()">SEARCH</button>
+    </div>
+
+</nav>
+
+
+    
+    <div class="container">
+        <h1>QUADRATIC EQUATIONS</h1>
+        <h2>Definition</h2>
+        <p>A quadratic equation is an equation of degree 2 (highest power of x is 2).</p>
+
+        <h2>General Form</h2>
+        <p>ax² + bx + c = 0</p>
+        <b>where:
+            <ul>
+                <li>a ≠ 0</li>
+                <li>a, b, c are constants</li>
+                <li>x is the variable</li>
+            </ul>
+        </b>
+
+    <div class="example">
+        <h2>Examples</h2>
+        <b>
+        <p>x² + 5x + 6 = 0</p>
+        <p>2x² − 3x − 2 = 0</p>
+        <p>x² − 9 = 0</p>
+
+        <P>These are Quadratic Equations</P>
+        </b>
+    </div>
+
+        <h2>Methods of solving Quadratic Equations</h2>
+        <ol>
+            <li><strong>Factorization Method</strong></li>
+            <li><strong>Completing the Square</strong></li>
+            <li><strong>Quadratic Formula</strong></li>
+            <li><strong>Graphical Method (we'll cover this later)</strong></li>
+
+        </ol>
+        <h2>1.Factorization Method</h2>
+        <p>Factorizing is breaking an equation into smaller "building blocks" (factors) that multiply together to give the original result.
+        </p>
+        <P><b>To "FACTOR" is simply to introduce brackets back to the equation</b></P>
+        <p>It is the opposite of <b>Expanding</b>(Removing The brackets)</p>
+
+        <div class="example">
+        <h2>Example</h2>
+        <b>
+        <p>Solve the following Quadratic Equation Using Factorization Method:</p>
+        <p>x² − 7x + 12 = 0</p>
+        <p>Clue:We introduce the brackets from the "sum" and the "product"</p>
+        </b>
+        <p><b>Solution</b></p>
+        <p><b>(i)The product = x² Coefficient X The constant</b></p>
+        <p>The x <sup>2</sup> coefficient is <b>1</b></p>
+        <p>The Constant is <b>12</b></p>
+        <p><b>Product = 1 X 12 = 12</b></p>
+
+        <p><b>(ii)Find the sum</b></p>
+        <p><b>Clue:The sum is the "x" coefficient</b></p>
+        <p>In this case, the sum is <b>-7</b></p>
+
+        <p><b>(iii)Find the factors</b></p>
+        <p>Ask yourself: <b>Which two numbers gives "-7" when added and "12" when multiplied?</b></p>
+        <p><b>The factors are "-3" and "-4"</b></p>
+        <p>This is because <b>(-3) + (-4) = -7</b> and <b>-3 X -4 = 12</b></p>
+
+        <p><b>(iv)Replace the sum by the factors</b></p>
+        <p><b>x² - 3x -4x + 12 = 0</b></p>
+
+        <p><b>(v)Factor out the Equation</b></p>
+        <p><b>x(x - 3) - 4(x - 3) = 0</b></p>
+        <p>After  Factorizing, you will notice that 2 brackets are identical. <b>Take only one of them.</b></p>
+        <p><b>Form another bracket from the Equation</b></p>
+        <p>The resulting Equation will be :</p>
+        <p><b>(x - 3) (x - 4) = 0</b></p>
+
+        <p><b>(vi)Solve each bracket separately.</b></p>
+        <p><b>(x - 3) = 0</b></p>
+        <p><b>x = 3</b></p>
+
+        <b>
+            <p>(x - 4) = 0</p>
+            <p>x = 4</p>
+        </b>
+
+    <p><b>you notice that you will find two values of x.</b></p>
+    <p><b><i>A quadratic equation usually has two solutions (roots). These are denoted as X<sub>1</sub> and X<sub>2</sub></i></b></p>
+        <h2>Final Answers</h2>
+        <b>
+            <p>x<sub>1</sub> = 3</p>
+            <p>x<sub>2</sub>= 4</p>
+        </b>
+        </div>
+
+        <hr>
+
+
+    <h2>2.Completing The Square</h2>
+    <p>Completing the square is a method of solving a quadratic equation by turning it into a <b> perfect square</b> so it becomes easy to solve</p>
+    
+    <div class="example">
+        <h2>Example</h2>
+        <b>
+        <p>Solve the following Quadratic Equation Using Completing Square Method:</p>
+        <p>x² − 7x + 12 = 0</p>
+
+        <p>solution</p>
+    
+
+        <p>(i)Make sure the equation is in the form:</p>
+        <p>ax² + bx + c = 0</p>
+        <p>Our Equation is already in that form:</p>
+        <p>x² − 7x + 12 = 0</p>
+        <p>(ii)Move the constant to the other side</p>
+        <p>(leave x terms on one side)</p>
+        
+        <p>x² − 7x = -12</p>
+
+        <p>(iii)Make sure the coefficient of x² is 1</p>
+        <p>Divide Through by a (if a ≠ 1)</p>
+        <p>x² − 7x = -12</p>
+
+        <p>(iv)Use the formula: "<i>(b/2)<sup>2</sup> = C" to make another constant for the equation</i></p>
+        <p>(Take half of the coefficient of x, then square it)</p>
+        <p>NOTE:<i>For easier calculation,just Write it as (b/2)<sup>2</sup></i></p>
+        <p>(v)It becomes: <i>(-7/2)² which is the same as (-3.5)²</i></p>
+
+        <p>(vi)Add that number to both sides of the equation</p>
+        <p>x² - 7x + (3.5)² = -12 + (-3.5)²</p>
+        <p>(vii)The left side is now a perfect square trinomial, which can be written as: (x - 3.5)²</p>
+
+        <P>(viii)Simplify the Left side of the equation and evaluate the right part of the equation.</P>
+
+        <p>(x - 3.5)² = -12 + 12.25</p>
+        <p>(x - 3.5)² = 0.25</p>
+
+    <p>(ix)To find "x",we need to find the squareroot of each part.</p>
+    <p>&radic;(x - 3.5)² =  &plusmn;&radic;(0.25)</p>
+
+    <p>(x)Solve for x</p>
+
+    <p>(x - 3.5) = &plusmn;(0.5)</p>
+
+    <p>x<sub>1</sub> = + 0.5 + 3.5 </p>
+    <p>x<sub>1</sub> = 4</p>
+
+    
+    <p>x<sub>2</sub> = - 0.5 + 3.5 </p>
+    <p>x<sub>2</sub> = 3</p>
+
+        <h2>Final Answers</h2>
+        <b>
+            <p>x<sub>1</sub> = 4</p>
+            <p>x<sub>2</sub>= 3</p>
+        </b>
+    </b>
+
+    </div>
+    <hr>
+    
+        <h2>3.Quadratic Formula</h2>
+
+        <p>The Quadratic Formula is a universal mathematical formula used to find the exact values of x
+    (the "roots" or "solutions") for any quadratic equation in the standard form:</p>
+
+        <p><i><b>ax² + bx + c = 0</b></i></p>
+
+        <p>The <b>Quadratic Formula</b> is derived from <b>completing the square</b>. It is the "Ultimate Shortcut" of solving any Quadratic equation.</p>
+        
+        <p>To find the values of "x" directly for a Quadratic equation in the form :<i><b>ax² + bx + c = 0</b></i> use the quadratic formula;</p>
+        
+    <img src="quadratic.jpg" alt="Rojjy" width="400">
+        <p>This is the Quadratic Formula </p>
+        
+        <div class="example">
+        <h2>Example</h2>
+        <b>
+        <p>Solve the following Quadratic Equation Using The Quadratic Formula:</p>
+        <p>x² − 7x + 12 = 0</p>
+        
+        <p>solution</p>
+    
+
+        <p>(i)Make sure the equation is in the form:</p>
+        <p>ax² + bx + c = 0</p>
+        <p>Our Equation is already in that form:</p>
+        <p>x² − 7x + 12 = 0</p>
+
+        <p>Relate this Equation with : ax² + bx + c = 0</p>
+        <p>After relating, we discover that:</p>
+        <ul>
+            <li>a = 1</li>
+            <li>b = -7</li>
+            <li>c = 12</li>
+        </ul>
+        
+        <p>Substitute the values of "a" , "b" , and "c" to the Quadratic Formula</p>
+        <img src="quadratic2.jpg" alt="Rojjy" width="400">
+        <p>Simplify the solution</p>
+
+        <p>After simplifying:</p>
+        <p>x = (7 ± 1) / 2</p>
+
+        <p>Solve for x</p>
+        <p>x<sub>1</sub> = (7 + 1) / 2</p>
+        <p>x<sub>1</sub> = 8/2</p>
+        <p>x<sub>1</sub> = 4</p>
+
+        <p>x<sub>2</sub> = (7 - 1) / 2</p>
+        <p>x<sub>2</sub> = 6/2</p>
+        <p>x<sub>2</sub> = 3</p>
+
+        </b>
+        <h2>Final Answers</h2>
+        <b>
+            <p>x<sub>1</sub> = 4</p>
+            <p>x<sub>2</sub>= 3</p>
+        </b>
+        </div>
+
+        <h2>Sample Questions</h2>
+        <b>
+        <p>Attempt the following Questions:</p>
+        <div class="question-list">
+        <p>(i)x² + 5x + 6 = 0</p>
+        <p>(ii) x² − 7x + 12 = 0</p>
+        <p>(iii) x² − 3x − 10 = 0</p>
+        <p>(iv) x² + 8x + 15 = 0</p>
+        <p>(v) x² − 4x − 21 = 0</p>
+        </b>
+    </div>
+
+        <h2>Check The Answers Below:</h2>
+    <button type="button" id="check-btn" onclick="showAllAnswers()">
+        Check All Answers
+    </button>
+
+    <!-- This is hidden until the JS "wakes it up" -->
+    <div id="answer-key" style="display: none;">
+        <h3>Answers:</h3>
+        <b>
+        <p>(i) x = -2, x = -3</p>
+        <p>(ii) x = 3, x = 4</p>
+        <p>(iii) x = 5, x = -2</p>
+        <p>(iv) x = -3, x = -5</p>
+        <p>(v) x = 7, x = -3</p>
+        </b>
+    </div>
+
+    <div class="note-box">
+    <h2>TAKE NOTE:</h2>
+    <ul>
+    <li>Don't forget the Squared term  (x²). If there is no squared term (x²),then it isn't a quadratic equation !</li>
+    <li>Set to Zero: Always ensure the equation equals 0 before you start.</li>
+    <li>The "Product-Sum" Rule: Find two numbers that multiply to give the last number and add up to the middle number.</li>
+    <li>Sign Flip: Remember that if your factor is (x - 3), the final answer is x = 3.</li> 
+    <li>Double Check: Always plug your final value back into the original equation to see if it actually equals zero.</li>
+    </ul>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+
+    </body>
+    </html>

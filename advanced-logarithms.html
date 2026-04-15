@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Logarithms | Smart Maths Notes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="advanced-log.css">
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+</head>
+
+<body>
+   <nav class="navbar">
+
+    <!-- HAMBURGER -->
+    <div class="hamburger">☰</div>
+    
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- DESKTOP LINKS -->
+    <a href="index.html" class="desktop-only">Home</a>
+
+    <div class="dropdown">
+        <button class="dropbtn">Maths Topics ▾</button>
+        <div class="dropdown-content">
+            <a href="linear-equations.html">Linear Equations</a>
+            <a href="simultaneous-linear-equations.html">Simultaneous Equations</a>
+            <a href="quadratic-equations.html">Quadratic Equations</a>
+            <a href="exponents-and-logarithms.html">Exponents and Logarithms</a>
+            <a href="advanced-logarithms.html">Advanced Logarithms</a>
+        </div>
+    </div>
+
+    <a href="privacy.html" class="desktop-only">Privacy</a>
+    <a href="contact.html" class="desktop-only">Contact Us</a>
+
+    <div class="search-group">
+        <div class="search-wrapper">
+            <input type="text" id="topicSearch"
+                oninput="showSuggestions()"
+                onkeydown="if(event.key==='Enter') executeSearch()"
+                placeholder="Search maths topics...">
+            <div id="suggestionsBox" class="suggestions-dropdown"></div>
+        </div>
+
+        <!-- HIDE ON MOBILE -->
+        <button class="modern-search-btn desktop-only" onclick="executeSearch()">SEARCH</button>
+    </div>
+
+</nav>
+
+  
+<div class="container">
+<h1>ADVANCED LOGARITHMS</h1>
+
+<h2>1. Definition</h2>
+
+<p>Logarithms are the inverse of exponents. They are used to determine the power to which a base must be raised to obtain a given number.</p>
+
+<p><b>Mathematical definition:</b></p>
+<b><p>log<sub>b</sub> a = c ⇔ b<sup>c</sup> = a</p></b>
+
+<p><b>Where:</b></p>
+<ul>
+    <li>b is the base.</li>
+    <li>a is the number.</li>
+    <li>c is the exponent or index.</li>
+</ul>
+<b>
+<p>Take Note :</p>
+<ul>
+<p>1. b > 0 (The base must be positive)</p>
+<p>2. b ≠ 1 (The base cannot be 1)</p>
+<p>3. a > 0 (The number/argument must be positive)</p>
+</b>
+</ul>
+
+<p>In simple terms, a logarithm answers the question: "To what power must the base be raised to get a?"</p>
+
+<hr>
+
+<h2>2. Forms of Logarithms</h2>
+
+<p><b>(i) Exponential Form.</b></p>
+<p>This form expresses a number as a base raised to a power.</p>
+<b><p>b<sup>c</sup> = a</p></b>
+
+<p><b>(ii) Logarithmic Form.</b></p>
+<p>This form expresses the exponent required to produce a number.</p>
+<b><p>log<sub>b</sub> a = c</p></b>
+
+<p><b>(iii) Common Logarithm.</b></p>
+<p>This is a logarithm with base 10.</p>
+<p>log x = log<sub>10</sub> x</p>
+
+<p><b>(iv) Natural Logarithm.</b></p>
+<p>This is a logarithm with base e.</p>
+<b><p>ln x = log<sub>e</sub> x</p></b>
+
+<p>The value of <b>e</b> is approximately 2.718.</p>
+
+<hr>
+
+<h2>3. Laws of Logarithms</h2>
+
+<p><b>The following laws are used to simplify logarithmic expressions. All laws apply only when the arguments are positive and the base is greater than zero but not equal to 1.</b></p>
+
+<p><b>(i) Product Law.</b></p>
+<b><p>log<sub>b</sub>(MN) = log<sub>b</sub>M + log<sub>b</sub>N</p></b>
+<p>This law states that the logarithm of a product is equal to the sum of the logarithms of the individual factors.</p>
+
+<p><b>(ii) Quotient Law.</b></p>
+<b><p>log<sub>b</sub>(M/N) = log<sub>b</sub>M - log<sub>b</sub>N</p></b>
+<p>This law states that the logarithm of a quotient is equal to the difference of the logarithms.</p>
+
+<p><b>(iii) Power Law.</b></p>
+<b><p>log<sub>b</sub>(M<sup>k</sup>) = k log<sub>b</sub>M</p></b>
+<p>This law states that the logarithm of a number raised to a power is equal to the exponent multiplied by the logarithm of the base number.</p>
+
+<p><b>(iv) Change of Base Law.</b></p>
+<b><p>log<sub>b</sub>a = log a / log b</p></b>
+<p>This law allows logarithms to be rewritten in another base, usually base 10 or base e, for easier evaluation.</p>
+
+<p><b>(v) Special Logarithmic Values.</b></p>
+<b><p>log<sub>b</sub>1 = 0, because b<sup>0</sup> = 1.</p></b>
+<b><p>log<sub>b</sub>b = 1, because b<sup>1</sup> = b.</p></b>
+
+<hr>
+
+<h2>4. Applications and Advanced Concepts</h2>
+
+<p><b>(i) Solving Logarithmic Equations.</b></p>
+<p>To solve logarithmic equations, convert the logarithmic form into <b>exponential form.</b></p>
+
+<b>
+    <p>Example:</p>
+<p>log<sub>2</sub>x = 3</p>
+<p>2<sup>3</sup> = x</p>
+<p>x = 8</p>
+
+<p><b>(ii) Equating Logarithms with the Same Base.</b></p>
+<p>If log<sub>b</sub>M = log<sub>b</sub>N, then M = N.</p>
+<p>This is valid only when the base is the same and the arguments are positive.</p>
+
+<p><b>(iii) Combining Logarithms.</b></p>
+<p>log a + log b = log(ab)</p>
+<p>log a - log b = log(a/b)</p>
+<p>These rules are derived from the product and quotient laws.</p>
+
+<p><b>(iv) Expanding Logarithms.</b></p>
+<p>log(ab<sup>2</sup>) = log a + 2log b</p>
+<p>This process breaks down complex logarithmic expressions into simpler parts.</p>
+
+<p><b>(v) Domain of Logarithmic Functions.</b></p>
+<p>The argument of a logarithm must always be positive.</p>
+
+<p><b>Therefore:</b></p>
+<ul>
+    <li>log(0) is undefined.</li>
+    <li>log(negative number) is undefined.</li>
+</ul>
+</b>
+
+<h2>5. Logarithmic Equations Involving Laws.</h2>
+<div class="example">
+<p><b>Example 1</b></p>
+<p>Solve:</p>
+<b><p>log<sub>2</sub>x = 4</p></b>
+
+<p><b>Step 1:</b> Convert to exponential form.</p>
+<p>2<sup>4</sup> = x</p>
+<p>This step changes the logarithmic equation into an exponential equation.</p>
+
+<p><b>Step 2:</b> Evaluate the power.</p>
+<p>x = 16</p>
+<p>Raising 2 to the power of 4 gives the value of x.</p>
+</div>
+<hr>
+
+<div class="example">
+<p><b>Example 2</b></p>
+<p>Solve:</p>
+<b><p>log<sub>3</sub>(x) = log<sub>3</sub>(9)</p></b>
+
+<p><b>Step 1:</b> Remove the logarithms.</p>
+<p>x = 9</p>
+<p>When logarithms have the same base, their arguments are equal.</p>
+</div>
+<hr>
+
+<div class="example">
+<p><b>Example 3</b></p>
+<p>Solve:</p>
+<b><p>log x + log 2 = 1</p></b>
+
+<p><b>Step 1:</b> Apply the product law.</p>
+<p>log(2x) = 1</p>
+<p>The sum of logarithms becomes the logarithm of a product.</p>
+
+<p><b>Step 2:</b> Convert to exponential form.</p>
+<p>10<sup>1</sup> = 2x</p>
+<p>Base 10 is used since no base is written.</p>
+
+<p><b>Step 3:</b> Simplify.</p>
+<p>10 = 2x</p>
+<p>Evaluating the power gives a simple equation.</p>
+
+<p><b>Step 4:</b> Solve for x.</p>
+<p>x = 5</p>
+<p>Divide both sides by 2 to find x.</p>
+</div>
+<hr>
+
+<div class="example">
+<p><b>Example 4</b></p>
+<p>Solve:</p>
+<b><p>log<sub>2</sub>(x + 1) = 3</p></b>
+
+<p><b>Step 1:</b> Convert to exponential form.</p>
+<p>2<sup>3</sup> = x + 1</p>
+<p>This removes the logarithm and simplifies the equation.</p>
+
+<p><b>Step 2:</b> Evaluate the power.</p>
+<p>8 = x + 1</p>
+<p>Raising 2 to the power of 3 gives 8.</p>
+
+<p><b>Step 3:</b> Solve for x.</p>
+<p>x = 7</p>
+<p>Subtract 1 from both sides to obtain the value of x.</p>
+</div>
+<hr>
+
+<div class="example">
+<p><b>Example 5</b></p>
+<p>Solve:</p>
+<b><p>log(x - 1) + log(x - 3) = 1</p></b>
+
+<p><b>Step 1:</b> Apply the product law.</p>
+<p>log[(x - 1)(x - 3)] = 1</p>
+<p>The sum of logarithms becomes the logarithm of a product.</p>
+
+<p><b>Step 2:</b> Convert to exponential form.</p>
+<p>10<sup>1</sup> = (x - 1)(x - 3)</p>
+<p>The logarithmic equation is converted into exponential form.</p>
+
+<p><b>Step 3:</b> Simplify.</p>
+<p>10 = (x - 1)(x - 3)</p>
+<p>Evaluating the power gives a quadratic equation.</p>
+
+<p><b>Step 4:</b> Expand the brackets.</p>
+<p>10 = x<sup>2</sup> - 4x + 3</p>
+<p>This removes the brackets and simplifies the expression.</p>
+
+<p><b>Step 5:</b> Rearrange the equation.</p>
+<p>x<sup>2</sup> - 4x - 7 = 0</p>
+<p>All terms are brought to one side of the equation.</p>
+
+<p><b>Step 6:</b> Solve using the quadratic formula.</p>
+<p>x = (4 ± √44) / 2</p>
+<p>The quadratic formula is used to find the values of x.</p>
+
+<p><b>Step 7:</b> Simplify.</p>
+<p>x = 2 ± √11</p>
+<p>The solution is simplified to its final form.</p>
+</div>
+<hr>
+
+
+    <h2>Sample Questions</h2>
+    <b>
+    <p>Attempt the following Questions:</p>
+<div class="question-list">
+<p>1. Convert to exponential form:</p>
+<p>log<sub>3</sub> 81 = 4</p>
+
+<p>2. Expand completely:</p>
+<p>log(2x<sup>2</sup>y)</p>
+
+<p>3. Simplify:</p>
+<p>log<sub>10</sub>100 + log<sub>10</sub>10</p>
+
+<p>4. Solve:</p>
+<p>log<sub>2</sub>x = 5</p>
+
+<p>5. Simplify:</p>
+<p>log(50) - log(5)</p>
+
+<p>6. Convert to logarithmic form:</p>
+<p>7<sup>2</sup> = 49</p>
+
+<p>7. Solve:</p>
+<p>log<sub>3</sub>x = log<sub>3</sub>9</p>
+
+<p>8. Expand completely:</p>
+<p>log(4x<sup>3</sup>/y)</p>
+
+<p>9. Evaluate:</p>
+<p>log<sub>5</sub>1</p>
+
+<p>10. Use change of base to evaluate:</p>
+<p>log<sub>2</sub>8</p>
+ </b>
+</div>
+     <h2>Check The Answers Below:</h2>
+<button type="button" id="check-btn" onclick="showAllAnswers()">
+    Check All Answers
+</button>
+
+<!-- This is hidden until the JS "wakes it up" -->
+<div id="answer-key" style="display: none;">
+<h2> Answers</h2>
+<b>
+
+<p>1. 3<sup>4</sup> = 81</p>
+<p>2. log 2 + 2log x + log y</p>
+<p>3. 3</p>
+<p>4. x = 32</p>
+<p>5. 1</p>
+<p>6. log<sub>7</sub>49 = 2</p>
+<p>7. x = 9</p>
+<p>8. log 4 + 3log x - log y</p>
+<p>9. 0</p>
+<p>10. log 8 / log 2 = 3</p>
+ </b>
+</div>
+
+<div class="note-box">
+<h2>TAKE NOTE</h2>
+
+<ul>
+
+<li><b>Understand the meaning of a logarithm:</b> A logarithm simply tells you the power to which a base must be raised to obtain a number. Always relate logs to exponents.</li>
+
+<li><b>Always convert when stuck:</b> If a logarithmic equation looks confusing, convert it into exponential form. This makes solving much easier.</li>
+
+<li><b>Check the base carefully:</b> When two logarithms have the same base, you can equate their arguments directly.</li>
+
+<li><b>Use the laws correctly:</b> Remember that logarithm laws apply only to multiplication, division, and powers — not addition or subtraction of terms.</li>
+
+<li><b>Product and quotient rules:</b> log a + log b = log(ab), and log a − log b = log(a/b). These are commonly tested in exams.</li>
+
+<li><b>Always combine logs first:</b> When solving equations, combine logarithms into a single log before converting to exponential form.</li>
+
+<li><b>Watch the domain:</b> The value inside a logarithm must always be positive. Negative or zero values are not allowed.</li>
+
+<li><b>Check your final answers:</b> Always substitute your answers back into the original equation to confirm they are valid.</li>
+
+<li><b>Be careful with quadratic results:</b> When solving log equations that lead to quadratics, you may get two answers. Check both, because one may be invalid.</li>
+
+<li><b>Know common log values:</b> For example, log₁₀10 = 1, log₁₀100 = 2, and log₁₀1 = 0. These help you solve faster.</li>
+
+<li><b>Practice regularly:</b> Logarithms become easier with consistent practice, especially with different types of equations.</li>
+
+</ul>
+</div>
+
+<script src="script.js"></script>
+<script src="search.js"></script>
+
+</body>
+</html>

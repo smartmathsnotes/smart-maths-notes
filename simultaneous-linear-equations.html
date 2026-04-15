@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simultaneous Linear Equations | Smart Maths Notes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href="simultaneous.css">
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+</head>
+<body>
+
+ <nav class="navbar">
+
+    <!-- HAMBURGER -->
+    <div class="hamburger">☰</div>
+    
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- DESKTOP LINKS -->
+    <a href="index.html" class="desktop-only">Home</a>
+
+    <div class="dropdown">
+        <button class="dropbtn">Maths Topics ▾</button>
+        <div class="dropdown-content">
+            <a href="linear-equations.html">Linear Equations</a>
+            <a href="simultaneous-linear-equations.html">Simultaneous Equations</a>
+            <a href="quadratic-equations.html">Quadratic Equations</a>
+            <a href="exponents-and-logarithms.html">Exponents and Logarithms</a>
+            <a href="advanced-logarithms.html">Advanced Logarithms</a>
+        </div>
+    </div>
+
+    <a href="privacy.html" class="desktop-only">Privacy</a>
+    <a href="contact.html" class="desktop-only">Contact Us</a>
+
+    <div class="search-group">
+        <div class="search-wrapper">
+            <input type="text" id="topicSearch"
+                oninput="showSuggestions()"
+                onkeydown="if(event.key==='Enter') executeSearch()"
+                placeholder="Search maths topics...">
+            <div id="suggestionsBox" class="suggestions-dropdown"></div>
+        </div>
+
+        <!-- HIDE ON MOBILE -->
+        <button class="modern-search-btn desktop-only" onclick="executeSearch()">SEARCH</button>
+    </div>
+
+</nav>
+
+
+  
+<div class="container">
+    <h1>SIMULTANEOUS LINEAR EQUATIONS</h1>
+
+    <h2>Definition</h2>
+    <p>Simultaneous linear equations are two or more equations with the same variables that are solved at the same time to find values that satisfy all equations.</p>
+
+    <h2>Form</h2>
+    <p>For two variables x and y, the general form is:</p>
+    <p>a₁x + b₁y = c₁</p>
+    <p>a₂x + b₂y = c₂</p>
+    <p><b>Where:</b></p>
+    <ul>
+        <li>a₁, b₁, a₂, b₂ are coefficients</li>
+        <li>c₁, c₂ are constants</li>
+    </ul>
+
+    <div class="example">
+    <h2>Example</h2>
+    <p>x + y = 10</p>
+    <p>x - y = 2</p>
+    <p>This is a simultaneous linear equation</p>
+    </div>
+
+    <h2>Methods of Solving Simultaneous Equations</h2>
+    <p>Common methods of calculating simultaneous linear equations are:</p>
+    <ol>
+        <li><strong>Substitution Method</strong> </li>
+        <li><strong>Elimination Method</strong></li>
+    </ol>
+
+<p>In this lesson, we'll focus on these two methods.</p>
+    <b>Other methods are:</b>
+     <ul>
+        <li>Matrix method</li>
+        <li>Cramer's Rule/Determinant Rule(under matrix)</li>
+        <li>Cross-Multiplication Method</li>
+        <li>Graphical Method</li>
+     </ul>
+     <p>We will cover these later.</p>
+     <h2>1.Substitution Method</h2>
+     <p>Substitution is solving by defining one variable in terms of the other.</p>
+     <ul>
+        <li>Make one variable the subject</li>
+        <li>Substitute into the other equation</li>
+        <li>Solve step by step</li>
+     </ul>
+
+     <div class="example">
+    <h2>Example 1</h2>
+    <b>
+    <p>Solve the following simultaneous equations Using substitution Method</p>
+    <p>2x + 2y = 8</p>
+    <p>3x +  y = 2</p>
+
+       <p>solution :</p>
+        <p>(i)Make x the subject of the formula in equation the first equation.</p>
+        <p>2x = 8 - 2y</p>
+       <p>x = (8 - 2y)/2</p>
+       <p>x = (4 - y)</p>
+
+       <p>(ii)Substitute x in the second equation.</p>
+        <p>3(4 - y) + y = 2</p>
+        <p>(iii)Solve for y.</p>
+        <p>12 - 3y + y = 2</p>
+        <p>-3y + y = 2 - 12</p>
+        <p>-2y = -10</p>
+        <p>y = 5</p>
+
+        
+        <p>(iv)solve for x</p>
+        <p>In step 1,we found that x = (4 - y)</p>
+        <p>To find x, we simply substitute the value of y in this equation</p>
+        <p>x = (4 - 5)</p>
+         <p>x = -1</p>
+      
+        <p>Final Answers:</p>
+        <p>x = -1</p>
+        <p>y = 5</p>
+    </b>
+     </div>
+
+     <hr>
+
+     <div class="example">
+<h2>Example 2</h2>
+<b>
+<p>Solve the following pair of equations using substitution method :</p>
+<p>2x + y = 8</p>
+<p>3x + y = 11</p>
+
+<p><b>Step 1:</b> Make y the subject of the first equation.</p>
+<p>y = 8 - 2x</p>
+<p>This expresses y in terms of x.</p>
+
+<p><b>Step 2:</b> Substitute y into the second equation.</p>
+<p>3x + (8 - 2x) = 11</p>
+<p>This replaces y with its equivalent expression.</p>
+
+<p><b>Step 3:</b> Simplify the equation.</p>
+<p>3x + 8 - 2x = 11</p>
+<p>This removes the brackets.</p>
+
+<p><b>Step 4:</b> Solve for x.</p>
+<p>x + 8 = 11</p>
+<p>x = 3</p>
+<p>This gives the value of x.</p>
+
+<p><b>Step 5:</b> Substitute x into y = 8 - 2x.</p>
+<p>y = 8 - 2(3)</p>
+<p>This helps us find the value of y.</p>
+
+<p><b>Step 6:</b> Simplify and solve for y.</p>
+<p>y = 8 - 6</p>
+<p>y = 2</p>
+<p>This gives the value of y.</p>
+
+<p><b>Final Answers:</b></p>
+<p>x = 3</p>
+<p>y = 2</p>
+</b>
+     </div>
+<hr>
+
+<div class="example">
+<h2>Example 3</h2>
+<b>
+<p>Solve the following pair of equations using substitution meethod :</p>
+<p>2x + 3y = 13</p>
+<p>3x + 2y = 12</p>
+
+<p><b>Step 1:</b> Make y the subject of the first equation.</p>
+<p>3y = 13 - 2x</p>
+<p>y = (13 - 2x) / 3</p>
+<p>This expresses y in terms of x.</p>
+
+<p><b>Step 2:</b> Substitute y into the second equation.</p>
+<p>3x + 2[(13 - 2x) / 3] = 12</p>
+<p>This replaces y with its equivalent expression.</p>
+
+<p><b>Step 3:</b> Multiply through by 3 to remove the denominator.</p>
+<p>9x + 2(13 - 2x) = 36</p>
+<p>This simplifies the equation.</p>
+
+<p><b>Step 4:</b> Expand the brackets.</p>
+<p>9x + 26 - 4x = 36</p>
+<p>This removes the brackets.</p>
+
+<p><b>Step 5:</b> Simplify the equation.</p>
+<p>5x + 26 = 36</p>
+<p>This combines like terms.</p>
+
+<p><b>Step 6:</b> Solve for x.</p>
+<p>5x = 10</p>
+<p>x = 2</p>
+<p>This gives the value of x.</p>
+
+<p><b>Step 7:</b> Substitute x into y = (13 - 2x) / 3.</p>
+<p>y = (13 - 4) / 3</p>
+<p>This helps us find the value of y.</p>
+
+<p><b>Step 8:</b> Simplify and solve for y.</p>
+<p>y = 9 / 3</p>
+<p>y = 3</p>
+<p>This gives the value of y.</p>
+
+<p><b>Final Answers:</b></p>
+<p>x = 2</p>
+<p>y = 3</p>
+</b>
+</div>
+
+    <h2>2.Elimination Method</h2>
+    <p>Elimination is solving by cancelling one variable through the addition or subtraction of the equations.</p>
+    <ul>
+    <li>Make coefficients equal</li>
+    <li>Add or subtract equations</li>
+    <li>Eliminate one variable</li>
+    </ul>
+    
+    <div class="example">
+    <h2>Example 1</h2>
+    <p>Solve the following simultaneous equations Using Elimination Method</p>
+    <p>2x + 2y = 8</p>
+    <p>3x +  y = 2</p>
+    <b>
+        <p>Solution :</p>
+      <p>(i)Make x coefficients to be equal by "Cross multiplying the coefficients"</p>
+      <p>3(2x + 2y = 8)</p>
+      <p>2(3x + y = 2)</p>
+
+      <p>6x + 6y = 24</p>
+      <p>6x + 2y = 4</p>
+
+      <p>(ii)Subtract the equations to eliminate the x variable</p>
+      <p>(iii)After subtracting,you get:</p>
+      <p>0 + 4y = 20</p>
+
+      <p>(iv)Solve for y</p>
+      <p>4y = 20</p>
+      <p>y = 5</p>
+
+      <p>(v)Solve for x</p>
+      <p>(vi)Substitute y in any equation containing both the coefficients</p>
+      <p>(vii)I'll choose the second equation(Both equations will give the correct Answer): 3x + y = 2</p>
+      <p>3x + y = 2; but y = 5</p>
+      <p>3x + 5 = 2</p>
+      <p>3x = 2 - 5</p>
+      <p>3x = -3</p>
+      <p>x = -1</p>
+
+      <p>Final Answers:</p>
+        <p>x = -1</p>
+        <p>y = 5</p>
+    </b>
+    </div>
+    <hr>
+
+<div class="example">
+<h2>Example 2</h2>
+<b>
+    <p>Solve the following simultaneous equations Using Elimination Method</p>
+<p>2x + y = 8</p>
+<p>3x + y = 11</p>
+
+<p><b>Step 1:</b> Subtract the first equation from the second equation.</p>
+<p>(3x + y) - (2x + y) = 11 - 8</p>
+<p>This step eliminates the variable y.</p>
+
+<p><b>Step 2:</b> Simplify the equation.</p>
+<p>x = 3</p>
+<p>This gives the value of x.</p>
+
+<p><b>Step 3:</b> Substitute x into the first equation.</p>
+<p>2(3) + y = 8</p>
+<p>This step helps us find the value of y.</p>
+
+<p><b>Step 4:</b> Simplify and solve for y.</p>
+<p>6 + y = 8</p>
+<p>y = 2</p>
+<p>This gives the value of y.</p>
+
+<p><b>Final Answers:</b></p>
+<p>x = 3</p>
+<p>y = 2</p>
+</b>
+</div>
+<hr>
+
+
+<div class="example">
+<h2>Example 3</h2>
+<b>
+    <p>Solve the following simultaneous equations Using Elimination Method</p>
+<p>2x + 3y = 13</p>
+<p>3x + 2y = 12</p>
+
+<p><b>Step 1:</b> Multiply the first equation by 2.</p>
+<p>4x + 6y = 26</p>
+<p>This makes the coefficients of y easier to eliminate.</p>
+
+<p><b>Step 2:</b> Multiply the second equation by 3.</p>
+<p>9x + 6y = 36</p>
+<p>This makes the coefficients of y equal.</p>
+
+<p><b>Step 3:</b> Subtract the first new equation from the second new equation.</p>
+<p>(9x + 6y) - (4x + 6y) = 36 - 26</p>
+<p>This step eliminates the variable y.</p>
+
+<p><b>Step 4:</b> Simplify the equation.</p>
+<p>5x = 10</p>
+<p>This gives a simple linear equation.</p>
+
+<p><b>Step 5:</b> Solve for x.</p>
+<p>x = 2</p>
+<p>This gives the value of x.</p>
+
+<p><b>Step 6:</b> Substitute x into the first equation.</p>
+<p>2(2) + 3y = 13</p>
+<p>This step helps us find the value of y.</p>
+
+<p><b>Step 7:</b> Simplify and solve for y.</p>
+<p>4 + 3y = 13</p>
+<p>3y = 9</p>
+<p>y = 3</p>
+<p>This gives the value of y.</p>
+
+<p><b>Final Answers:</b></p>
+<p>x = 2</p>
+<p>y = 3</p>
+</b>
+</div>   
+
+      
+    <h2>Sample Questions</h2>
+    <b>
+    <p>Attempt the following Questions:</p>
+    <div class="question-list">
+
+   <p>(1.)</p>
+   <p>x + y = 5</p>
+   <p>x - y = 1</p>
+
+   <p>(2.)</p>
+   <p>x + y = 10</p>
+   <p>x + 2y = 12</p>
+
+   <p>(3.)</p>
+   <p>2x + y = 7</p>
+   <p>x + y = 4</p>
+
+   <p>(4.)</p>
+   <p>3x + y = 10</p>
+   <p>x - y = 2</p>
+
+   <p>(5.)</p>
+   <p>x + y = 8</p>
+   <p>2x - y = 7</p>
+    </b>
+</div>
+    
+     <h2>Check The Answers Below:</h2>
+<button type="button" id="check-btn" onclick="showAllAnswers()">
+    Check All Answers
+</button>
+
+<!-- This is hidden until the JS "wakes it up" -->
+<div id="answer-key" style="display: none;">
+    <h3>Answers:</h3>
+    <b>
+    <p>(1) x = 3, y = 2</p>
+    <p>(2) x = 8, y = 2</p>
+    <p>(3) x = 3, y = 1</p>
+    <p>(4) x = 3, y = 1</p>
+    <p>(5) x = 5, y = 3</p>
+    </b>
+</div>
+
+<div class="note-box">
+
+<h2>TAKE NOTE :</h2>
+
+<ul>
+
+<li><b>Understand simultaneous equations:</b> These are equations solved together to find values that satisfy all equations at the same time.</li>
+
+<li><b>Solutions must satisfy both equations:</b> Always ensure your final answers work in each equation given.</li>
+
+<li><b>Substitution Method:</b> This method involves making one variable the subject of one equation and substituting it into the other equation.</li>
+
+<li><b>Choose the easiest variable:</b> In substitution, always pick the variable that is simplest to isolate to reduce errors.</li>
+
+<li><b>Substitute correctly:</b> After making one variable the subject, replace it carefully in the second equation without changing signs.</li>
+
+<li><b>Simplify fully:</b> After substitution, simplify the equation completely before solving for the variable.</li>
+
+<li><b>Elimination Method:</b> This method involves adding or subtracting equations to eliminate one variable.</li>
+
+<li><b>Make coefficients equal:</b> Before eliminating, multiply equations if necessary so that one variable has equal coefficients.</li>
+
+<li><b>Eliminate carefully:</b> Add or subtract the equations correctly to remove one variable completely.</li>
+
+<li><b>Watch negative signs:</b> Be careful when subtracting equations, as sign errors are very common.</li>
+
+<li><b>Solve step by step:</b> After eliminating one variable, solve for the remaining variable, then substitute back to find the other.</li>
+
+<li><b>Check your answers:</b> Always substitute your values back into both original equations to confirm correctness.</li>
+
+<li><b>Avoid unnecessary complexity:</b> Choose the method (substitution or elimination) that makes the solution easiest.</li>
+
+<li><b>Practice regularly:</b> Mastery comes from solving different types of questions using both methods.</li>
+
+</ul>
+</div>
+
+<script src="script.js"></script>
+<script src="search.js"></script>
+
+</body>
+</html>

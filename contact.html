@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Smart Maths Notes</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+</head>
+<body>
+
+    
+ <nav class="navbar">
+
+    <!-- HAMBURGER -->
+   <div class="hamburger">☰</div>
+    
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- DESKTOP LINKS -->
+    <a href="index.html" class="desktop-only">Home</a>
+
+    <div class="dropdown">
+        <button class="dropbtn">Maths Topics ▾</button>
+        <div class="dropdown-content">
+            <a href="linear-equations.html">Linear Equations</a>
+            <a href="simultaneous-linear-equations.html">Simultaneous Equations</a>
+            <a href="quadratic-equations.html">Quadratic Equations</a>
+            <a href="exponents-and-logarithms.html">Exponents and Logarithms</a>
+            <a href="advanced-logarithms.html">Advanced Logarithms</a>
+        </div>
+    </div>
+
+    <a href="privacy.html" class="desktop-only">Privacy</a>
+    <a href="contact.html" class="desktop-only">Contact Us</a>
+
+    <div class="search-group">
+        <div class="search-wrapper">
+            <input type="text" id="topicSearch"
+                oninput="showSuggestions()"
+                onkeydown="if(event.key==='Enter') executeSearch()"
+                placeholder="Search maths topics...">
+            <div id="suggestionsBox" class="suggestions-dropdown"></div>
+        </div>
+
+        <!-- HIDE ON MOBILE -->
+        <button class="modern-search-btn desktop-only" onclick="executeSearch()">SEARCH</button>
+    </div>
+
+</nav>
+    <div class="container">
+        <h1>CONTACT US</h1>
+        <p>At <b>Smart Maths Notes</b>, we believe that clarity is the foundation of all mathematical understanding.</p><p>Whether you are a student struggling with a specific theorem, an educator seeking to utilize our resources in your classroom, or a parent looking to support your child’s learning journey, we are committed to providing you with the assistance you need.</p>
+
+        <h2>Get in Touch</h2>
+        <p>Our academic team is constantly refining our notes to ensure they meet the highest standards of pedagogical excellence.</p><p>We welcome inquiries regarding the following:</p>
+        <ul>
+            <li><strong>Content Clarification:</strong><p>If a particular step in an algebra derivation or a geometric proof is unclear, please let us know so we can improve our explanation.</p></li>
+            <li><strong>Error Reporting:</strong> <p>Reporting minor typographical errors ensures the accuracy of our resources for all learners.</p></li>
+            <li><strong>Topic Suggestions:</strong> <p>If there is a specific area of mathematics you would like to see covered, we are eager to hear your ideas.</p></li>
+            <li><strong>Technical Support:</strong> <p>If you encounter issues with the search functionality or interactive elements, our technical team is ready to assist.</p></li>
+        </ul>
+
+        <h2>Send a Message</h2>
+        <p>Please utilize the fields below to reach our digital support desk. We aim to review all academic inquiries within 24 to 48 business hours.</p>
+        
+
+        
+<div class="upgrade-notice">
+    <h2>Platform Update</h2>
+   <p>Our development team is currently upgrading the <b>messaging</b>
+    architecture for <b>Smart Maths Notes</b>.</p><p>This feature is <b>temporarily unavailable</b>
+    while we implement a more secure and faster delivery system.</p><p>We appreciate your patience 
+    during this pre-launch phase !</p>
+</div>
+
+        <form>
+            <p>Full Name:<br>
+            <input type="text" name="name" size="40"></p>
+            
+            <p>Email Address:<br>
+            <input type="email" name="email" size="40"></p>
+            
+            <p>Subject:<br>
+            <input type="text" name="subject" size="40"></p>
+            
+            <p>Your Message:<br>
+            <textarea name="message" rows="10" cols="50"></textarea></p>
+            
+            <button type="submit">Send Message</button>
+        </form>
+
+        <hr>
+
+    <h2>Contact Our Privacy Team</h2>
+    <p>If you have specific questions regarding your data, our Privacy Policy, or our data handling practices, please contact our Data Protection Officer directly at 
+    <strong>privacy@smartmaths.com</strong>.
+    </p>
+    <p><strong>Office Hours:</strong> Monday through Friday, 9:00 AM &ndash; 5:00 PM</p>
+     </div>
+
+<script src="search.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Maths Notes | Home</title>
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+</head>
+
+<body>
+    
+<nav class="navbar">
+
+    <!-- HAMBURGER -->
+   <div class="hamburger">☰</div>
+    
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- DESKTOP LINKS -->
+    <a href="index.html" class="desktop-only">Home</a>
+
+    <div class="dropdown">
+        <button class="dropbtn">Maths Topics ▾</button>
+        <div class="dropdown-content">
+            <a href="linear-equations.html">Linear Equations</a>
+            <a href="simultaneous-linear-equations.html">Simultaneous Equations</a>
+            <a href="quadratic-equations.html">Quadratic Equations</a>
+            <a href="exponents-and-logarithms.html">Exponents and Logarithms</a>
+            <a href="advanced-logarithms.html">Advanced Logarithms</a>
+        </div>
+    </div>
+
+    <a href="privacy.html" class="desktop-only">Privacy</a>
+    <a href="contact.html" class="desktop-only">Contact Us</a>
+
+    <div class="search-group">
+        <div class="search-wrapper">
+            <input type="text" id="topicSearch"
+                oninput="showSuggestions()"
+                onkeydown="if(event.key==='Enter') executeSearch()"
+                placeholder="Search maths topics...">
+            <div id="suggestionsBox" class="suggestions-dropdown"></div>
+        </div>
+
+        <!-- HIDE ON MOBILE -->
+        <button class="modern-search-btn desktop-only" onclick="executeSearch()">SEARCH</button>
+    </div>
+
+</nav>
+
+<header class="top-header">
+    
+    <div class="logo-area">
+        <img src="logo.jpg" alt="Smart Maths Notes Logo">
+        <h1>SMART MATHS NOTES</h1>
+    </div>
+
+</header>
+<div class="container">
+
+<p><b>Smart Maths Notes</b> is a comprehensive educational platform dedicated to transforming the way students engage with mathematics.</p><p> Our mission is to provide clear, structured, and easy-to-understand content that strips away the complexity of traditional textbooks.</p><p>Our platform offers a comprehensive curriculum designed to support learners at every stage, from <b>primary</b> and <b>secondary education</b> through to <b>university level</b>.</p>
+ <p>Whether you are preparing for an upcoming exam or looking to master a specific topic from scratch, our platform is designed to help you build a rock-solid foundation.</p>
+<p>Through a combination of simplified explanations, logically organized notes, and step-by-step guidance, we aim to bridge the gap between confusion and clarity.</p><p>We believe that every student has the potential to excel in mathematics when given the right tools.</p><p>By focusing on the core principles of each mathematical concept, <b>Smart Maths Notes</b> empowers learners to improve their problem-solving skills, boost their academic confidence, and achieve their full potential in the classroom and beyond.</p>
+<p>Mathematics plays a vital role in academic success.</p><p>This platform presents essential topics in a logical and progressive manner, making it easier for learners to follow and apply concepts effectively.</p>
+
+<h2>Mathematics Topics</h2>
+
+<p>The following is a comprehensive catalog of the mathematical disciplines we aim to cover.</p><p>Please note that Smart Maths Notes is an evolving platform; while we are working diligently to finalize our entire curriculum,<b> not all listed topics are currently active.</b></p><p>To explore the lessons already live and ready for study, please refer to the <b>'Maths Topics'</b> menu in the navigation bar.</p>
+
+</p>
+
+<div class="topics">
+    <b>
+    <ul>
+  <!-- Live Links -->
+  <li><a href="linear-equations.html" class="topic-link"><p>Linear Equations</p></a></li>
+  <li><a href="simultaneous-linear-equations.html" class="topic-link"><p>Simultaneous Linear Equations</p></a></li>
+  <li><a href="quadratic-equations.html" class="topic-link"><p>Quadratic Equations</p></a></li>
+  <li><a href="exponents-and-logarithms.html" class="topic-link"><p>Exponents and Logarithms</p></a></li>
+  <li><a href="advanced-logarithms.html" class="topic-link"><p>Advanced Logarithms</p></a></li>
+
+  <!-- Static Topics (No links) -->
+  <li><p>Surds</p></li>
+  <li><p>Algebraic Expressions</p></li>
+  <li><p>Linear Algebra</p></li>
+  <li><p>Calculus 1</p></li>
+  <li><p>Calculus 2</p></li>
+  <li><p>Vectors</p></li>
+  <li><p>Matrices</p></li>
+  <li><p>Trigonometry</p></li>
+  <li><p>Number Systems</p></li>
+  <li><p>Polynomials</p></li>
+  <li><p>Statistics</p></li>
+  <li><p>Probability</p></li>
+  <li><p>Simple Interest</p></li>
+  <li><p>Compound Interest</p></li>
+  <li><p>Speed, Distance and Time</p></li>
+  <li><p>Time and Work</p></li>
+  <li><p>Ratio and Proportion</p></li>
+  <li><p>Percentages</p></li>
+  <li><p>Binomial Expansion</p></li>
+  <li><p>Inequalities</p></li>
+  <li><p>Variation</p></li>
+  <li><p>Sequences</p></li>
+  <li><p>Series</p></li>
+  <li><p>Coordinate Geometry</p></li>
+  <li><p>Circle Theorems</p></li>
+  <li><p>Mensuration</p></li>
+  <li><p>Set Theory</p></li>
+  <li><p>Financial Mathematics</p></li>
+  <li><p>Graphs of Functions</p></li>
+  <li><p>Mixtures and Alligations</p></li>
+  <li><p>Permutations</p></li>
+  <li><p>Combinations</p></li>
+  <li><p>Area Under Curves</p></li>
+  <li><p>Inverse Functions</p></li>
+  <li><p>Partial Fractions</p></li>
+  <li><p>Complex Numbers</p></li>
+  <li><p>Mathematical Reasoning</p></li>
+  <li><p>Linear Programming</p></li>
+</ul>
+ </b>
+</div>
+
+<h2>Learning Approach</h2>
+
+<p>Each topic on this website is presented in a structured format that includes definitions, explanations, and worked examples.</p><p>The goal is to simplify complex ideas and make them accessible to all learners.</p>
+
+<p>Consistent practice and a deep-rooted understanding of fundamental concepts are the essential pillars for mastering mathematics.</p><p>We encourage users to journey through topics progressively, moving from foundational principles to advanced applications.</p><p>By applying what you learn through our interactive exercises, you don't just memorize formulas—you develop the critical problem-solving intuition needed to tackle any mathematical challenge with confidence.</p><p>It is our sincere hope that this platform becomes a vital part of your study routine, helping you gain the insights needed to benefit your education and excel in your academic pursuits.</p><p>We look forward to seeing you achieve your full potential.</p>
+
+</div>
+
+<script src="search.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>

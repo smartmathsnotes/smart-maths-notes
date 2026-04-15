@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exponents and Logarithms | Smart Maths Notes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exponents-and-log.css">
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+</head>
+<body>
+
+ <nav class="navbar">
+
+    <!-- HAMBURGER -->
+    <div class="hamburger">☰</div>
+    
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- DESKTOP LINKS -->
+    <a href="index.html" class="desktop-only">Home</a>
+
+    <div class="dropdown">
+        <button class="dropbtn">Maths Topics ▾</button>
+        <div class="dropdown-content">
+            <a href="linear-equations.html">Linear Equations</a>
+            <a href="simultaneous-linear-equations.html">Simultaneous Equations</a>
+            <a href="quadratic-equations.html">Quadratic Equations</a>
+            <a href="exponents-and-logarithms.html">Exponents and Logarithms</a>
+            <a href="advanced-logarithms.html">Advanced Logarithms</a>
+        </div>
+    </div>
+
+    <a href="privacy.html" class="desktop-only">Privacy</a>
+    <a href="contact.html" class="desktop-only">Contact Us</a>
+
+    <div class="search-group">
+        <div class="search-wrapper">
+            <input type="text" id="topicSearch"
+                oninput="showSuggestions()"
+                onkeydown="if(event.key==='Enter') executeSearch()"
+                placeholder="Search maths topics...">
+            <div id="suggestionsBox" class="suggestions-dropdown"></div>
+        </div>
+
+        <!-- HIDE ON MOBILE -->
+        <button class="modern-search-btn desktop-only" onclick="executeSearch()">SEARCH</button>
+    </div>
+
+</nav>
+
+
+  
+<div class="container">
+<h1>EXPONENTS AND LOGARITHMS</h1>
+
+<h2>A.EXPONENTS</h2>
+
+<h2>1. Definition</h2>
+<p>Exponents (or Indices) show how many times a number is multiplied by itself.</p>
+<div class="example"><!-- Corrected version with dots -->
+    <b>
+<p>example;</p>
+<p>x<sup>3</sup> = x &middot; x &middot; x</p>
+    </b>
+</div>
+
+<hr>
+ <h2>2. Basic Laws of Exponents</h2>
+ 
+ <p><b>(i) Multiplication Law</b></p>
+ <p>To multiply powers with the same base, keep the base and add the exponents.</p>
+
+ <p><b>xᵃ &middot; xᵇ = xᵃ⁺ᵇ</b></p>
+
+ <p><b>(ii) Division Law</b></p>
+ <p>To divide powers with the same base, keep the base and subtract the exponents.</p>
+
+ <p><b>xᵃ ÷ xᵇ = xᵃ⁻ᵇ</b></p>
+
+ <p><b>(iii) Power of a Power Law</b></p>
+ <p>To raise a power to another power, keep the base and multiply the exponents.</p>
+
+ <p><b>(xᵃ)ᵇ = xᵃᵇ</b></p>
+
+ <p><b>(iv) Power of a Product Law</b></p>
+ <p> When a product is raised to a power, apply that power to every factor inside the parentheses.</p>
+
+ <p><b>(xy)ᵃ = xᵃyᵃ</b></p>
+
+ <p><b>(v) Zero Exponent Law</b></p>
+ <p> Any non-zero number raised to the power of zero is always equal to 1.</p>
+
+ <p><b>x⁰ = 1</b></p>
+
+ <p><b>(vi) Negative Exponent Law</b></p>
+ <p>A negative exponent indicates the reciprocal (one over) of the base with a positive exponent.</p>
+
+ <p><b>x⁻ᵃ = 1 / xᵃ</b></p>
+
+ <p><b>(vii) Fractional Exponent Law</b></p>
+ <p>The denominator of a fractional exponent indicates the root, while the numerator indicates the power.</p>
+
+ <b>
+ <p>x<sup>1/2</sup> = √x</p>
+ <p>x<sup>m/n</sup> = ⁿ√(xᵐ)</p>
+ </b>
+
+ <hr>
+
+<div class="example">
+<h2>3. Examples</h2>
+<b>
+<p>(i) x² &middot; x³ = x⁵</p>
+<p>(ii) x⁶ ÷ x² = x⁴</p>
+<p>(iii) (x²)³ = x⁶</p>
+<p>(iv) x⁻² = 1/x²</p>
+<p>(v) x<sup>1/2</sup> = √x</p>
+</b>
+</div>
+<hr>
+
+    <h2>Sample Questions</h2>
+    <b>
+    <p>Attempt the following Questions:</p>
+    <div class="question-list">
+    <p>(i) Simplify: x² &middot; x⁵</p>
+    <p>(ii) Simplify: x⁶ ÷ x²</p>
+    <p>(iii) Simplify: (x³)²</p>
+    <p>(iv) Simplify: x⁻³</p>
+    <p>(v) Simplify: x<sup>1/2</sup></p>
+    </b>
+    </div>
+<hr>
+
+     <h2>Check The Answers Below:</h2>
+<button type="button" id="check-btn" onclick="showAllAnswers()">
+    Check All Answers
+</button>
+
+<!-- This is hidden until the JS "wakes it up" -->
+<div id="answer-key" style="display: none;">
+    <h3>Answers:</h3>
+    <b>
+        <p>(i) x⁷</p>
+        <p>(ii) x⁴</p>
+        <p>(iii) x⁶</p>
+        <p>(iv) 1/x³</p>
+        <p>(v) √x</p>
+    </b>
+</div>
+<div class="note-box">
+<h2>TAKE NOTE:</h2>
+<ul>
+<li>Bases must be identical: You can only add or subtract the powers if the main numbers (the bases) are exactly the same.</li>
+<li>Addition is not multiplication: There is no rule to simplify exponents when you are adding or subtracting terms; index laws only apply to multiplication and division.</li>
+<li>Zero power equals one: Any number (except zero) raised to the power of zero will always be 1, no matter how large the number is.</li>
+<li>Negative powers make fractions: A negative sign in the exponent does not make the number negative; it simply tells you to flip the number into a fraction.</li>
+</ul>
+</div>
+
+<h2>B. LOGARITHMS</h2>
+
+<h2>1. Definition</h2>
+<p>A logarithm tells us the power to which a base must be raised to get a number.</p>
+
+<h2>2. General Form</h2>
+<b>
+<p><i>logₐ(b) = x</i></p>
+<p>where :</p>
+<ul>
+<li>a = Base</li>
+<li>x = Logarithm (Result)</li>
+<li>b = Argument</li>
+</ul>
+</b>
+<p>The above logarithm is read as:</p>
+<p>This is read as :<b> <i>Log "b" base "a" is equal to "x".</i></b></p>
+<p>MEANING : <b><i>"x" is the "Logarithm of Argument "b" base "a".</i></b></p>
+
+<hr>
+
+<div class="example">
+<h2>Example</h2>
+<b>
+<p>log₁₀(100) = 2</p>
+<p>This is read as : <i>Log "100" base "10" is equal to "2".</i></p>
+<p>Meaning ;</p>
+<p>10² = 100</p>
+<p>This is now in Exponent Form.</p>
+</b>
+</div>
+
+<hr>
+
+<h2>3. Changing Between Forms</h2>
+<p>Logarithm Form can be changed into Exponent Form and vice versa :</p>
+
+<h2>(i) Changing From Logarithm Form to Exponent Form</h2>
+<p>When changing Logarithm Form to Exponent Form :</p>
+<ul>
+    <li>The "base" remains constant (It does not change)</li>
+    <li>The "Logarithm" becomes the "Power"</li>
+    <li>The "Argument" becomes the "Result"</li>
+</ul>
+<p>In simple terms :</p><b>We simply swap the "Argument" and the "Logarithm", then remove log.</b>
+
+<div class="example">
+<h2>Example</h2>
+<b>
+<b>Convert the following Logarithm Form to Exponent Form :</b>
+<p><i>logₐ(b) = x</i></p>
+<p>In this Logarithm :</p>
+<ul>
+<li>a = Base</li>
+<li>x = Logarithm (Result)</li>
+<li>b = Argument</li>
+</ul>
+
+<p>When converted it to Exponent Form, it becomes :</p>
+<i><p>a<sup>x</sup> = b</p></i>
+<p>Where :</p>
+<ul>
+<li>a = Base</li>
+<li>x = Power (Exponent)</li>
+<li>b = Result</li>
+</ul>
+</b>
+</div>
+
+<hr>
+
+<h2>(ii) Changing From Exponent Form to Logarithm Form</h2>
+<p>When changing an Exponent Form to logarithm form :</p>
+<ul>
+    <li>The "base" remains constant (It does not change)</li>
+    <li>The "power" becomes the "Logarithm" (Result)</li>
+    <li>The "Result" becomes the "Argument"</li>
+</ul>
+<p>In simple terms :</p><b>We simply swap the "Power" and the "Result", then introduce log.</b>
+
+<div class="example">
+<h2>Example</h2>
+<b>
+<p>Convert the following Exponent Form to Logarithm Form :</p>
+<p>aˣ = b</p>
+<p>In this Exponent Form :</p>
+<p>"a" is the "base"</p>
+<p>"x" is the "power"</p>
+<p>"b" is the "result"</p>
+
+<p>When converted it to Logarithm Form, it becomes :</p>
+<p><i>logₐ(b) = x</i></p>
+<p>Where :</p>
+<ul>
+<li>a = Base</li>
+<li>x = Logarithm (Result)</li>
+<li>b = Argument</li>
+</ul>
+</b>
+</div>
+
+<hr>
+
+<p><b>For better Understanding, Check out The Table below :</b></p>
+<p>It summarizes The Difference Between Logarithm Forms and  Exponent Form (Index Notation)</p>
+
+<p><b>Exponent Form (Index Form) :<i>a<sup>c</sup> = b</i></b></p>
+<p><b>Logarithm Form :<i>logₐ(b) = c</i></b></p>
+    <img src="logarithm.png" alt="Rojjy" width="900">
+
+
+<hr>
+
+    <div class="example">
+    <h2>Examples</h2>
+    <b>
+    <p>(i) 2³ = 8</p>
+    <p>👉 log₂(8) = 3</p>
+
+    
+    <p>(ii) 10² = 100</p>
+    <p>👉 log₁₀(100) = 2</p>
+
+    
+    <p>(iii) 3³ = 27</p>
+    <p>👉 log₃(27) = 3</p>
+
+    </b>
+    </div>
+
+    <hr>
+
+    <h2>Sample Questions</h2>
+    <p>Attempt the following Questions:</p>
+    <b>
+   <div class="question-list">
+
+  <p>1. Convert to exponential form:</p>
+  <p>log₂ 8 = 3</p>
+
+  <p>2. Convert to logarithmic form:</p>
+  <p>5² = 25</p>
+
+  <p>3. Convert to exponential form:</p>
+  <p>log₁₀ 1000 = 3</p>
+
+  <p>4. Convert to logarithmic form:</p>
+  <p>3⁴ = 81</p>
+
+  <p>5. Convert to exponential form:</p>
+  <p>log₄ 16 = 2</p>
+    </b>
+</div>
+     <h2>Check The Answers Below:</h2>
+<button type="button" id="check-btn-log" onclick="showAllAnswersLog()">
+    Check All Answers
+</button>
+
+<!-- This is hidden until the JS "wakes it up" -->
+<div id="answer-key-log" style="display: none;"> 
+    <h3>Answers:</h3>
+    <b>
+    <p>1. 2³ = 8</p>
+
+   <p>2. log₅ 25 = 2</p>
+
+   <p>3. 10³ = 1000</p>
+
+   <p>4. log₃ 81 = 4</p>
+
+   <p>5. 4² = 16</p>
+   </b>
+</div>
+
+<div class="note-box">
+<h2>TAKE NOTE :</h2>
+<p><b>When Converting Logarithms to Exponents and vice versa :</b></p>
+<ul>
+<li>The base stays the base: The small number at the bottom of a logarithm always remains the main large number (the base) when you switch to index form.</li>
+<li>The answer and the power swap: When moving between forms, the number that was the "answer" in one form becomes the "power" in the other.</li>
+<li>Logs always find the exponent: Remember that a logarithm is simply a mathematical way of asking "to what power" a number must be raised.</li>
+<li>Arguments must be positive: You can only take the logarithm of a positive number; you cannot have a log of zero or a negative number.</li>
+</ul>
+</div>
+
+
+<script src="script.js"></script>
+<script src="logscript.js"></script>
+<script src="search.js"></script>
+</body>
+</html>

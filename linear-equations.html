@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Linear Equations Notes | Smart Maths Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="linear-equations.css">
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+</head>
+<body>
+<nav class="navbar">
+
+    <!-- HAMBURGER -->
+    <div class="hamburger">☰</div>
+    
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- DESKTOP LINKS -->
+    <a href="index.html" class="desktop-only">Home</a>
+
+    <div class="dropdown">
+        <button class="dropbtn">Maths Topics ▾</button>
+        <div class="dropdown-content">
+            <a href="linear-equations.html">Linear Equations</a>
+            <a href="simultaneous-linear-equations.html">Simultaneous Equations</a>
+            <a href="quadratic-equations.html">Quadratic Equations</a>
+            <a href="exponents-and-logarithms.html">Exponents and Logarithms</a>
+            <a href="advanced-logarithms.html">Advanced Logarithms</a>
+        </div>
+    </div>
+
+    <a href="privacy.html" class="desktop-only">Privacy</a>
+    <a href="contact.html" class="desktop-only">Contact Us</a>
+
+    <div class="search-group">
+        <div class="search-wrapper">
+            <input type="text" id="topicSearch"
+                oninput="showSuggestions()"
+                onkeydown="if(event.key==='Enter') executeSearch()"
+                placeholder="Search maths topics...">
+            <div id="suggestionsBox" class="suggestions-dropdown"></div>
+        </div>
+
+        <!-- HIDE ON MOBILE -->
+        <button class="modern-search-btn desktop-only" onclick="executeSearch()">SEARCH</button>
+    </div>
+
+</nav>
+
+
+  
+<div class="container">
+<h1>LINEAR EQUATIONS</h1>
+
+<h2>1. Definition</h2>
+<p>A linear equation is an equation in which the highest power of the variable is 1.</p>
+
+<div class="example">
+<p><b>Example: 2x + 3 = 9</b></p>
+</div>
+
+<h2>2. Linear Equations in One Variable</h2>
+<p>General form: <b>ax + b = c</b></p>
+
+<h2>3. Solving Linear Equations</h2>
+<ul><b>note:</b>
+<li>A value changes sign when it crosses an equal sign.</li>
+<p>Example:<b> 2x - 10 = 0</b></p>
+When <b>10</b> crosses the equal sign, it becomes positive:
+<p><b>2x = 10</b></p>
+<li>A  Negative  sign  (-)  becomes  Positive  when  it  crosses  an  equal  sign</li>
+<li>A  Positive  sign  (+)  becomes  Negative  when  it  crosses  an  equal  sign</li>
+</ul>
+
+
+<h2>4. Examples</h2>
+<div class="example">
+<h3>Find the value of x in each equation below:</h3>
+<p><b>(i) x + 5 = 12</b></p>
+<p>x = 12 - 5</p>
+<p><b>x = 7</b></p>
+</div>
+
+<hr>
+<div class="example">
+<p><b>(ii) 3x = 15</b></p>
+<p>x = 15 / 3</p>
+<p><b>x = 5</b></p>
+</div>
+<hr>
+<div class="example">
+<p><b>(iii) 2x - 4 = 10</b></p>
+<p>2x = 10 + 4</p>
+<p>2x = 14</p>
+<p><b>x = 7</b></p>
+</div>
+<hr>
+<b>(iv)Equations with Variables on Both Sides</b>
+<div class="example">
+<p>When there are variables on both sides,collect like terms.</p>
+<p>3x + 2 = x + 10</p>
+<p>3x - x = 10 - 2</p>
+<p>2x = 8</p>
+<p>x = 4</p>
+</div>
+<hr>
+<b>(v)Equations With Fractions</b>
+<div class="example">
+<p>When there is a fraction,multiply each term of the equation by the <b>LCM</b> to eliminate the denominator.</p> 
+<p><b>x/2 + 3 = 7</b></p>
+<p>The <b>LCM</b> of the denominators : "2", "1" and "1" is <b>"2"</b></p>
+<p>Therefore, <b>each term</b> is multiplied by <b>2.</b></p>
+<p>(x/2) 2 + (3) 2= (7) 2</p>
+<p>X + 6 = 14</p>
+<P>X = 14 - 6</P>
+<p>x = 8</p>
+</div>
+<hr>
+<b>(vi)Equations With Brackets</b>
+<div class="example">
+<p>Simply open up the bracket by multiplying</p>
+<p>2(x + 3) = 10</p>
+<p>2x + 6 = 10</p>
+<p>2x = 10 - 6</p>
+<p>2x = 4</p>
+<p>x = 2</p>
+
+</div>
+<hr>
+<h2>5. Word Problems</h2>
+<div class="example">
+<p>(i)A number plus 6 is 15.Find the number.</p>
+<p><b>Step 1:</b> Let the number be x.</p>
+<p>x + 6 = 15</p>
+<p>x  = 15 - 6</p>
+<p>x = 9</p>
+</div>
+<hr>
+<div class="example">
+<p>(ii)Three times a number minus 5 is 16.What's the number ?</p>
+<p><b>Step 1:</b> Let the number be x.</p>
+<p>3x - 5 = 16</p>
+<p>3x = 16 + 5</p>
+<p>3x = 21</p>
+<p>x = 7</p>
+</div>
+
+<hr>
+<div class="example">
+<p>(iii) A number increased by 5 is 12. Find the number.</p>
+
+<p><b>Step 1:</b> Let the number be x.</p>
+<p>This defines the unknown.</p>
+
+<p><b>Step 2:</b> Form the equation.</p>
+<p>x + 5 = 12</p>
+<p>This represents the statement.</p>
+
+<p><b>Step 3:</b> Solve for x.</p>
+<p>x = 12 - 5</p>
+<p>This isolates the variable.</p>
+
+<p><b>Step 4:</b> Simplify.</p>
+<p>x = 7</p>
+<p>This gives the answer.</p>
+</div>
+<hr>
+
+<div class="example">
+<p>(iv) A number decreased by 3 is 10. Find the number.</p>
+
+<p><b>Step 1:</b> Let the number be x.</p>
+<p>This defines the unknown.</p>
+
+<p><b>Step 2:</b> Form the equation.</p>
+<p>x - 3 = 10</p>
+<p>This represents the statement.</p>
+
+<p><b>Step 3:</b> Solve for x.</p>
+<p>x = 10 + 3</p>
+<p>This isolates the variable.</p>
+
+<p><b>Step 4:</b> Simplify.</p>
+<p>x = 13</p>
+<p>This gives the answer.</p>
+</div>
+<hr>
+
+<div class="example">
+<p>(v) Three times a number is 21. Find the number.</p>
+
+<p><b>Step 1:</b> Let the number be x.</p>
+<p>This defines the unknown.</p>
+
+<p><b>Step 2:</b> Form the equation.</p>
+<p>3x = 21</p>
+<p>This represents the statement.</p>
+
+<p><b>Step 3:</b> Solve for x.</p>
+<p>x = 21 ÷ 3</p>
+<p>This isolates the variable.</p>
+
+<p><b>Step 4:</b> Simplify.</p>
+<p>x = 7</p>
+<p>This gives the answer.</p>
+</div>
+<hr>
+
+<div class="example">
+<p>(vi) A number divided by 4 is 6. Find the number.</p>
+
+<p><b>Step 1:</b> Let the number be x.</p>
+<p>This defines the unknown.</p>
+
+<p><b>Step 2:</b> Form the equation.</p>
+<p>x / 4 = 6</p>
+<p>This represents the statement.</p>
+
+<p><b>Step 3:</b> Solve for x.</p>
+<p>x = 6 × 4</p>
+<p>This isolates the variable.</p>
+
+<p><b>Step 4:</b> Simplify.</p>
+<p>x = 24</p>
+<p>This gives the answer.</p>
+</div>
+<hr>
+
+<div class="example">
+<p>(vii) The sum of a number and 9 is 20. Find the number.</p>
+
+<p><b>Step 1:</b> Let the number be x.</p>
+<p>This defines the unknown.</p>
+
+<p><b>Step 2:</b> Form the equation.</p>
+<p>x + 9 = 20</p>
+<p>This represents the statement.</p>
+
+<p><b>Step 3:</b> Solve for x.</p>
+<p>x = 20 - 9</p>
+<p>This isolates the variable.</p>
+
+<p><b>Step 4:</b> Simplify.</p>
+<p>x = 11</p>
+<p>This gives the answer.</p>
+</div>
+<hr>
+
+<div class="example">
+<p>(viii) The difference between a number and 4 is 8. Find the number.</p>
+
+<p><b>Step 1:</b> Let the number be x.</p>
+<p>This defines the unknown.</p>
+
+<p><b>Step 2:</b> Form the equation.</p>
+<p>x - 4 = 8</p>
+<p>This represents the statement.</p>
+
+<p><b>Step 3:</b> Solve for x.</p>
+<p>x = 8 + 4</p>
+<p>This isolates the variable.</p>
+
+<p><b>Step 4:</b> Simplify.</p>
+<p>x = 12</p>
+<p>This gives the answer.</p>
+</div>
+<hr>
+
+<div class="example">
+<p>(ix) Twice a number increased by 3 is 15. Find the number.</p>
+
+<p><b>Step 1:</b> Let the number be x.</p>
+<p>This defines the unknown.</p>
+
+<p><b>Step 2:</b> Form the equation.</p>
+<p>2x + 3 = 15</p>
+<p>This represents the statement.</p>
+
+<p><b>Step 3:</b> Solve for x.</p>
+<p>2x = 15 - 3</p>
+<p>This simplifies the equation.</p>
+
+<p><b>Step 4:</b> Continue solving.</p>
+<p>x = 12 ÷ 2</p>
+<p>This isolates the variable.</p>
+
+<p><b>Step 5:</b> Simplify.</p>
+<p>x = 6</p>
+<p>This gives the answer.</p>
+</div>
+<hr>
+
+<div class="example">
+<p>(x) Five more than twice a number is 17. Find the number.</p>
+
+<p><b>Step 1:</b> Let the number be x.</p>
+<p>This defines the unknown.</p>
+
+<p><b>Step 2:</b> Form the equation.</p>
+<p>2x + 5 = 17</p>
+<p>This represents the statement.</p>
+
+<p><b>Step 3:</b> Solve for x.</p>
+<p>2x = 17 - 5</p>
+<p>This simplifies the equation.</p>
+
+<p><b>Step 4:</b> Continue solving.</p>
+<p>x = 12 ÷ 2</p>
+<p>This isolates the variable.</p>
+
+<p><b>Step 5:</b> Simplify.</p>
+<p>x = 6</p>
+<p>This gives the answer.</p>
+</div>
+<hr>
+
+<div class="example">
+<p>(xi) The sum of three consecutive numbers is 30. Find the numbers.</p>
+
+<p><b>Step 1:</b> Let the first number be x.</p>
+<p>This defines the starting value.</p>
+
+<p><b>Step 2:</b> Represent the other numbers.</p>
+<p>x, x + 1, x + 2</p>
+<p>This shows consecutive numbers.</p>
+
+<p><b>Step 3:</b> Form the equation.</p>
+<p>x + (x + 1) + (x + 2) = 30</p>
+<p>This represents the statement.</p>
+
+<p><b>Step 4:</b> Simplify.</p>
+<p>3x + 3 = 30</p>
+<p>This combines like terms.</p>
+
+<p><b>Step 5:</b> Solve for x.</p>
+<p>3x = 27</p>
+<p>This simplifies the equation.</p>
+
+<p><b>Step 6:</b> Continue solving.</p>
+<p>x = 9</p>
+<p>This gives the first number.</p>
+
+<p><b>Step 7:</b> Write all numbers.</p>
+<p>9, 10, 11</p>
+<p>This gives the final answer.</p>
+</div>
+<hr>
+
+<div class="example">
+<p>(xii) A number plus its double is 18. Find the number.</p>
+
+<p><b>Step 1:</b> Let the number be x.</p>
+<p>This defines the unknown.</p>
+
+<p><b>Step 2:</b> Form the equation.</p>
+<p>x + 2x = 18</p>
+<p>This represents the statement.</p>
+
+<p><b>Step 3:</b> Simplify.</p>
+<p>3x = 18</p>
+<p>This combines like terms.</p>
+
+<p><b>Step 4:</b> Solve for x.</p>
+<p>x = 6</p>
+<p>This gives the answer.</p>
+</div>
+
+    <h2>Sample Questions</h2>
+    <b>
+    <p>Attempt the following Questions:</p>
+    <b>
+    <div class="question-list">
+
+     <p>(1.) x + 5 = 12</p>
+     <p>(2.) 10 + x = 25</p>
+     <p>(3.)  x - 8 = 10</p>
+     <p>(4.) 3x = 12</p>
+     <p>(5.) x / 2 = 5</p>
+    </div>
+     
+     <h2>Check The Answers Below:</h2>
+<button type="button" id="check-btn" onclick="showAllAnswers()">
+    Check All Answers
+</button>
+
+<!-- This is hidden until the JS "wakes it up" -->
+<div id="answer-key" style="display: none;">
+    <h3>Answers:</h3>
+    <b>
+    <p>(1.) x = 7</p>
+    <p>(2.) x = 15</p>
+    <p>(3.) x = 18</p>
+    <p>(4.) x = 4</p>
+     <p>(5.) x = 10</p>
+
+    </b>
+</div>
+
+    <div class="rules-box">
+        <h3>Important Rules</h3>
+        <ul>
+            <li>Do the same operation on both sides.</li>
+            <li>Keep the equation balanced.</li>
+            <li>Simplify step by step.</li>
+        </ul>
+    </div>
+
+    <div class="mistake-box">
+        <h3>Common Mistakes To Avoid.</h3>
+        <ul>
+        <li>Don't forget to flip the sign when moving terms!</li>
+        <li>Don't skip any step.</li>
+        </ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script src="search.js"></script>
+
+</body>
+</html>

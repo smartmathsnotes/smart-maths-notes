@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Smart Maths Notes</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+</head>
+<body>
+    
+ <nav class="navbar">
+
+    <!-- HAMBURGER -->
+   <div class="hamburger">☰</div>
+    
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- DESKTOP LINKS -->
+    <a href="index.html" class="desktop-only">Home</a>
+
+    <div class="dropdown">
+        <button class="dropbtn">Maths Topics ▾</button>
+        <div class="dropdown-content">
+            <a href="linear-equations.html">Linear Equations</a>
+            <a href="simultaneous-linear-equations.html">Simultaneous Equations</a>
+            <a href="quadratic-equations.html">Quadratic Equations</a>
+            <a href="exponents-and-logarithms.html">Exponents and Logarithms</a>
+            <a href="advanced-logarithms.html">Advanced Logarithms</a>
+        </div>
+    </div>
+
+    <a href="privacy.html" class="desktop-only">Privacy</a>
+    <a href="contact.html" class="desktop-only">Contact Us</a>
+
+    <div class="search-group">
+        <div class="search-wrapper">
+            <input type="text" id="topicSearch"
+                oninput="showSuggestions()"
+                onkeydown="if(event.key==='Enter') executeSearch()"
+                placeholder="Search maths topics...">
+            <div id="suggestionsBox" class="suggestions-dropdown"></div>
+        </div>
+
+        <!-- HIDE ON MOBILE -->
+        <button class="modern-search-btn desktop-only" onclick="executeSearch()">SEARCH</button>
+    </div>
+
+</nav>
+
+    <div class="container">
+        <h1>PRIVACY POLICY</h1>
+        <p><strong>Last Updated: April 2026</strong></p>
+
+        <p>At <b>Smart Maths Notes</b>, we recognize that privacy is of paramount importance, especially within the educational sector.</p><p>This document outlines the types of information we collect, how it is used, and the steps we take to ensure your data remains secure while you explore our learning resources.</p>
+
+        <h2>1. Information Collection and Data Transparency</h2>
+        <p>We only collect the minimum amount of data necessary to provide a high-quality user experience.</p><p></p>Our methods include:</p>
+        <ul>
+            <li><strong>Information You Provide:</strong> <p>When you reach out via our contact forms or subscribe to updates, we collect your name and email address solely for the purpose of responding to your inquiry.</p></li>
+            <li><strong>Automated Usage Data:</strong> <p>We automatically collect non-identifiable data such as browser types, device orientation, and page dwell time.</p><p>This helps us understand which math topics are most popular and allows us to optimize the site for all users.</p></li>
+            <li><strong>Search Queries:</strong> <p>To improve our "Topic Search" algorithm, we analyze the terms users search for.</p><p>This data is anonymized and used only to improve our content library and suggestion accuracy.</p></li>
+        </ul>
+
+        <h2>2. How We Use Your Data</h2>
+        <p>Your information is strictly used to enhance the educational services we provide.</p><p>Specifically, we use data to:</p>
+        <ul>
+            <li>Respond to your academic inquiries or provide technical support.</li>
+            <li>Monitor website performance and refine our mathematical explanations.</li>
+            <li>Protect against unauthorized access and maintain the integrity of our educational content.</li>
+        </ul>
+
+        <h2>3. Data Security and Storage</h2>
+        <p>We implement industry-standard security protocols to protect your personal information from unauthorized disclosure or alteration.</p><p>We strictly adhere to a "no-sale" policy; your personal identification information will never be sold, rented, or traded to third-party marketing firms for commercial gain.</p>
+
+        <h2>4. Children’s Online Privacy Protection</h2>
+        <p>As an educational platform frequently used by students, we are deeply committed to protecting children’s privacy.</p><p>In compliance with international standards, we do not knowingly collect personal data from <b>children under the age of 13</b> without verifiable parental or institutional consent.</p><p>Our platform is designed as a passive learning resource, allowing users to access notes without the need for account registration.</p>
+
+        <h2>5. Cookies and Tracking</h2>
+        <p>Our site uses "cookies" primarily to enhance navigation and remember your preferences, such as your preferred font size or recent searches.</p><p>You have the option to disable cookies through your browser settings, though this may impact the performance of the search suggestions dropdown.</p>
+
+        <h2>6. Your Legal Rights</h2>
+        <p>You maintain full control over any data you share with us.</p><p>Under modern data protection laws, you have the right to request access to the personal data we hold, request the correction or deletion of your information, or object to the processing of your data for specific purposes.</p>
+
+        <h2>7. Changes to This Policy</h2>
+        <p><b>Smart Maths Notes</b> reserves the right to update this policy at any time to reflect changes in our practices or legal obligations.</p><p>When updates occur, the "Last Updated" date at the top of this page will be revised.</p><p>We encourage users to frequently check this page to stay informed about how we protect the information we collect.</p>
+
+        <h2>8. International Data Transfers</h2>
+<p>Information we collect may be stored and processed in and transferred between any of the countries in which we operate to enable the use of the information in accordance with this policy.</p><p>If you are located outside of the country where our servers are hosted, please be aware that your information will be transferred to, stored, and processed in a location that may have different data protection laws than your own.</p>
+</div>
+
+
+<script src="search.js"></script>
+<script src="script.js"></script>
+</body>
+</html
